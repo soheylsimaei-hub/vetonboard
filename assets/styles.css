@@ -425,7 +425,7 @@
     position: relative;
     height: 78vh; min-height: 540px;
     overflow: hidden;
-    border-top: 1px solid var(--border);
+    border: none;
     background-color: var(--bg);
     background-image: url('/assets/founder-portrait.jpg');
     background-size: cover;
@@ -1037,7 +1037,7 @@
     position: relative;
     height: 88vh; min-height: 600px;
     overflow: hidden;
-    border-bottom: 1px solid var(--border);
+    border: none;
     background-color: var(--bg);
     background-image: url('/assets/founder-portrait.jpg');
     background-size: cover;
