@@ -641,9 +641,9 @@
   .about-portrait {
     aspect-ratio: 4 / 5;
     background-color: var(--bg);
-    background-image: url('/assets/founder-portrait.jpg');
+    background-image: url('/assets/founder-portrait-bio.jpg');
     background-size: cover;
-    background-position: center 18%;
+    background-position: 32% center;
     background-repeat: no-repeat;
     position: relative; border: 1px solid var(--border);
   }
