@@ -377,22 +377,22 @@
   /* behind the lens (founder presence) */
   .behind-the-lens {
     position: relative;
-    height: 70vh; min-height: 480px;
+    height: 78vh; min-height: 540px;
     overflow: hidden;
     border-top: 1px solid var(--border);
-    background:
-      radial-gradient(ellipse at 35% 65%, rgba(200, 140, 80, 0.22) 0%, transparent 55%),
-      radial-gradient(ellipse at 75% 30%, rgba(120, 80, 50, 0.30) 0%, transparent 50%),
-      linear-gradient(160deg, #1c1612 0%, #0a0a0a 100%);
+    background-color: var(--bg);
+    background-image: url('/assets/founder-portrait.jpg');
+    background-size: cover;
+    background-position: 65% 22%;
+    background-repeat: no-repeat;
   }
   .behind-the-lens::before {
     content: ''; position: absolute; inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.30 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
-    opacity: 0.5; mix-blend-mode: overlay;
+    background: linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.6) 35%, rgba(10,10,10,0.15) 65%, rgba(10,10,10,0.0) 100%);
   }
   .behind-the-lens::after {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, transparent 55%);
+    background: linear-gradient(to top, rgba(10,10,10,0.7) 0%, transparent 35%);
   }
   .behind-overlay {
     position: absolute; bottom: 4rem; left: 0; right: 0; z-index: 2;
@@ -578,15 +578,12 @@
   .about-grid { display: grid; grid-template-columns: 5fr 7fr; gap: 5rem; align-items: center; }
   .about-portrait {
     aspect-ratio: 4 / 5;
-    background:
-      radial-gradient(ellipse at 50% 30%, rgba(200, 164, 92, 0.14) 0%, transparent 60%),
-      linear-gradient(180deg, #1a1612 0%, #0a0a0a 100%);
+    background-color: var(--bg);
+    background-image: url('/assets/founder-portrait.jpg');
+    background-size: cover;
+    background-position: center 18%;
+    background-repeat: no-repeat;
     position: relative; border: 1px solid var(--border);
-  }
-  .about-portrait::after {
-    content: ''; position: absolute; inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.18 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
-    opacity: 0.5; mix-blend-mode: overlay;
   }
   .about h3 {
     font-family: 'Cormorant Garamond', serif;
@@ -939,22 +936,22 @@
   /* about page — long-form layout */
   .founder-image {
     position: relative;
-    height: 80vh; min-height: 520px;
+    height: 88vh; min-height: 600px;
     overflow: hidden;
     border-bottom: 1px solid var(--border);
-    background:
-      radial-gradient(ellipse at 35% 65%, rgba(200, 140, 80, 0.22) 0%, transparent 55%),
-      radial-gradient(ellipse at 75% 30%, rgba(120, 80, 50, 0.30) 0%, transparent 50%),
-      linear-gradient(160deg, #1c1612 0%, #0a0a0a 100%);
+    background-color: var(--bg);
+    background-image: url('/assets/founder-portrait.jpg');
+    background-size: cover;
+    background-position: 60% 22%;
+    background-repeat: no-repeat;
   }
   .founder-image::before {
     content: ''; position: absolute; inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.30 0'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
-    opacity: 0.5; mix-blend-mode: overlay;
+    background: linear-gradient(to right, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.4) 35%, rgba(10,10,10,0.0) 65%);
   }
   .founder-image::after {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(10,10,10,0.85) 0%, transparent 55%);
+    background: linear-gradient(to top, rgba(10,10,10,0.75) 0%, transparent 40%);
   }
   .founder-image-overlay {
     position: absolute; bottom: 4rem; left: 4rem; right: 4rem; z-index: 2;
