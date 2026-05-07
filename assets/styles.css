@@ -392,7 +392,14 @@
   }
   .behind-the-lens::after {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(10,10,10,0.7) 0%, rgba(10,10,10,0.15) 50%, rgba(10,10,10,0.0) 100%);
+    background: linear-gradient(
+      to bottom,
+      rgba(10,10,10,1) 0%,
+      rgba(10,10,10,0) 14%,
+      rgba(10,10,10,0) 70%,
+      rgba(10,10,10,0.45) 88%,
+      rgba(10,10,10,1) 100%
+    );
   }
   .behind-overlay {
     position: absolute; bottom: 4rem; left: 0; right: 0; z-index: 2;
@@ -951,7 +958,14 @@
   }
   .founder-image::after {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(10,10,10,0.78) 0%, rgba(10,10,10,0.15) 50%, transparent 100%);
+    background: linear-gradient(
+      to bottom,
+      rgba(10,10,10,1) 0%,
+      rgba(10,10,10,0) 12%,
+      rgba(10,10,10,0) 65%,
+      rgba(10,10,10,0.55) 88%,
+      rgba(10,10,10,1) 100%
+    );
   }
   .founder-image-overlay {
     position: absolute; bottom: 4rem; left: 4rem; right: 4rem; z-index: 2;
