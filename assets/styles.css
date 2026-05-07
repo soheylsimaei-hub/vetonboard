@@ -388,11 +388,11 @@
   }
   .behind-the-lens::before {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.6) 35%, rgba(10,10,10,0.15) 65%, rgba(10,10,10,0.0) 100%);
+    background: linear-gradient(to right, rgba(10,10,10,0.94) 0%, rgba(10,10,10,0.78) 35%, rgba(10,10,10,0.55) 65%, rgba(10,10,10,0.45) 100%);
   }
   .behind-the-lens::after {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(10,10,10,0.7) 0%, transparent 35%);
+    background: linear-gradient(to top, rgba(10,10,10,0.7) 0%, rgba(10,10,10,0.15) 50%, rgba(10,10,10,0.0) 100%);
   }
   .behind-overlay {
     position: absolute; bottom: 4rem; left: 0; right: 0; z-index: 2;
@@ -947,11 +947,11 @@
   }
   .founder-image::before {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(to right, rgba(10,10,10,0.85) 0%, rgba(10,10,10,0.4) 35%, rgba(10,10,10,0.0) 65%);
+    background: linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.7) 35%, rgba(10,10,10,0.45) 65%, rgba(10,10,10,0.4) 100%);
   }
   .founder-image::after {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(to top, rgba(10,10,10,0.75) 0%, transparent 40%);
+    background: linear-gradient(to top, rgba(10,10,10,0.78) 0%, rgba(10,10,10,0.15) 50%, transparent 100%);
   }
   .founder-image-overlay {
     position: absolute; bottom: 4rem; left: 4rem; right: 4rem; z-index: 2;
