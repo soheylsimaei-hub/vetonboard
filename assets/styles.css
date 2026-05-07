@@ -62,8 +62,8 @@
     display: flex; align-items: center; gap: 0.7rem;
     text-decoration: none; color: var(--ivory);
   }
-  .nav-mark { height: 38px; width: auto; display: block; transition: height 0.3s ease; }
-  nav.scrolled .nav-mark { height: 30px; }
+  .nav-mark { height: 22px; width: auto; display: block; transition: height 0.3s ease; }
+  nav.scrolled .nav-mark { height: 18px; }
   .nav-links { display: flex; gap: 2.4rem; align-items: center; }
   .nav-links a {
     color: var(--ivory); text-decoration: none;
@@ -691,7 +691,7 @@
     .principles { padding: 5rem 0; }
     .hero-photo { padding: 6rem 1.4rem 4rem; background-position: center 38%; }
     .hero-photo .hero-sub { font-size: 0.98rem; }
-    .nav-mark { height: 32px; }
+    .nav-mark { height: 18px; }
     .sisters-grid { grid-template-columns: 1fr; }
     .sister { border-right: none; border-bottom: 1px solid var(--border); }
     .sister:last-child { border-bottom: none; }
