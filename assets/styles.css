@@ -59,11 +59,39 @@
     max-width: 1440px; margin: 0 auto; padding: 0 2.5rem;
   }
   .nav-logo {
-    display: flex; align-items: center; gap: 0.7rem;
-    text-decoration: none; color: var(--ivory);
+    display: inline-flex; flex-direction: column; align-items: stretch;
+    gap: 0.5rem; text-decoration: none; color: var(--ivory);
+    transition: opacity 0.25s ease;
   }
-  .nav-mark { height: 22px; width: auto; display: block; transition: height 0.3s ease; }
-  nav.scrolled .nav-mark { height: 18px; }
+  .nav-logo:hover { opacity: 0.85; }
+  .nav-wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.22em;
+    text-transform: uppercase;
+    color: var(--ivory);
+    line-height: 1;
+    white-space: nowrap;
+    transition: font-size 0.3s ease;
+  }
+  nav.scrolled .nav-wordmark { font-size: 16px; }
+  .nav-underline {
+    display: block;
+    height: 1px;
+    width: 100%;
+    background: var(--gold);
+    opacity: 0.7;
+    position: relative;
+  }
+  .nav-underline::after {
+    content: ''; position: absolute;
+    left: 50%; top: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px; height: 4px;
+    background: var(--gold-bright); border-radius: 50%;
+    box-shadow: 0 0 7px 1px rgba(234, 211, 140, 0.6);
+  }
   .nav-links { display: flex; gap: 2.4rem; align-items: center; }
   .nav-links a {
     color: var(--ivory); text-decoration: none;
