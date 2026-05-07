@@ -48,6 +48,9 @@
       <a href="/collaborate" aria-current="page">Collaborate</a>
     </div>
     <a href="/#newsletter" class="nav-cta">Subscribe</a>
+    <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -233,6 +236,29 @@
     if (window.scrollY > 50) nav.classList.add('scrolled');
     else nav.classList.remove('scrolled');
   });
+
+  // Mobile menu toggle
+  const navToggle = document.querySelector('.nav-toggle');
+  const navLinks = document.querySelector('.nav-links');
+  if (navToggle && navLinks) {
+    const closeMenu = () => {
+      navToggle.classList.remove('open');
+      navLinks.classList.remove('open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    };
+    navToggle.addEventListener('click', () => {
+      const willOpen = !navToggle.classList.contains('open');
+      navToggle.classList.toggle('open', willOpen);
+      navLinks.classList.toggle('open', willOpen);
+      navToggle.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+      document.body.style.overflow = willOpen ? 'hidden' : '';
+    });
+    navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navToggle.classList.contains('open')) closeMenu();
+    });
+  }
 
   const collabForm = document.getElementById('collab-form');
   const cfThanks = document.getElementById('cf-thanks');
