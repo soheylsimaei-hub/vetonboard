@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="3840" height="1080" viewBox="0 0 3840 1080" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="flare" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFD36A" stop-opacity="1"/>
+      <stop offset="25%" stop-color="#C4912F" stop-opacity="0.55"/>
+      <stop offset="60%" stop-color="#C4912F" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#C4912F" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ivory" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFF9E8"/>
+      <stop offset="100%" stop-color="#DCD5C6"/>
+    </linearGradient>
+    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <text x="900" y="620"
+        text-anchor="middle"
+        font-family="Cinzel, Trajan Pro, Times New Roman, serif"
+        font-size="420"
+        font-weight="400"
+        letter-spacing="-10"
+        fill="url(#ivory)">VOB</text>
+
+  <g filter="url(#softGlow)">
+    <line x1="664" y1="486" x2="1136" y2="486"
+          stroke="#C4912F" stroke-width="7" stroke-linecap="round"/>
+    <line x1="730" y1="486" x2="1070" y2="486"
+          stroke="#FFD36A" stroke-width="2.5" stroke-linecap="round" opacity="0.85"/>
+    <ellipse cx="900" cy="486" rx="135" ry="23" fill="url(#flare)"/>
+    <circle cx="900" cy="486" r="10" fill="#FFD36A"/>
+  </g>
+
+  <line x1="1420" y1="285" x2="1420" y2="735" stroke="#B98E36" stroke-width="4" opacity="0.65"/>
+
+  <text x="2390" y="420"
+        text-anchor="middle"
+        font-family="Cinzel, Trajan Pro, Times New Roman, serif"
+        font-size="150"
+        font-weight="400"
+        letter-spacing="42"
+        fill="#E6E1D3">VET ON BOARD</text>
+
+  <text x="2390" y="570"
+        text-anchor="middle"
+        font-family="Montserrat, Avenir Next, Helvetica, Arial, sans-serif"
+        font-size="54"
+        font-weight="600"
+        letter-spacing="16"
+        fill="#B98E36">THE WORLD, SEEN THROUGH</text>
+
+  <text x="2390" y="650"
+        text-anchor="middle"
+        font-family="Montserrat, Avenir Next, Helvetica, Arial, sans-serif"
+        font-size="54"
+        font-weight="600"
+        letter-spacing="16"
+        fill="#B98E36">THE EYES OF A VETERINARIAN.</text>
+</svg>
