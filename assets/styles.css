@@ -388,7 +388,15 @@
   }
   .behind-the-lens::before {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(to right, rgba(10,10,10,0.94) 0%, rgba(10,10,10,0.78) 35%, rgba(10,10,10,0.55) 65%, rgba(10,10,10,0.45) 100%);
+    background: linear-gradient(
+      to right,
+      rgba(10,10,10,1) 0%,
+      rgba(10,10,10,0.92) 8%,
+      rgba(10,10,10,0.7) 30%,
+      rgba(10,10,10,0.45) 60%,
+      rgba(10,10,10,0.6) 90%,
+      rgba(10,10,10,1) 100%
+    );
   }
   .behind-the-lens::after {
     content: ''; position: absolute; inset: 0;
@@ -954,7 +962,15 @@
   }
   .founder-image::before {
     content: ''; position: absolute; inset: 0;
-    background: linear-gradient(to right, rgba(10,10,10,0.92) 0%, rgba(10,10,10,0.7) 35%, rgba(10,10,10,0.45) 65%, rgba(10,10,10,0.4) 100%);
+    background: linear-gradient(
+      to right,
+      rgba(10,10,10,1) 0%,
+      rgba(10,10,10,0.9) 8%,
+      rgba(10,10,10,0.65) 30%,
+      rgba(10,10,10,0.4) 60%,
+      rgba(10,10,10,0.55) 90%,
+      rgba(10,10,10,1) 100%
+    );
   }
   .founder-image::after {
     content: ''; position: absolute; inset: 0;
